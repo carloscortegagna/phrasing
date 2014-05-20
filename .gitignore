@@ -6,3 +6,4 @@ spec/dummy/log/development.log
 spec/dummy/log/test.log
 tmp
 Gemfile.lock
+.DS_Store

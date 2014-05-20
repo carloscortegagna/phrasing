@@ -1,4 +1,5 @@
-Rails.application.routes.draw do
+Spree::Core::Engine.add_routes do
+
   resources Phrasing.route, :as => 'phrasing_phrases', :controller => 'phrasing_phrases', :only => [:index, :edit, :update, :destroy] do
     collection do
       get 'help'
@@ -10,4 +11,5 @@ Rails.application.routes.draw do
     end
   end
   resources :phrasing_phrase_versions, :as => 'phrasing_phrase_versions', :controller => 'phrasing_phrase_versions', only: [:destroy]
+
 end

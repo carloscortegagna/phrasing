@@ -1,29 +1,28 @@
 #phrasing-edit-mode-bubble{
   *, *:after, *:before{
-    webkit-box-sizing:content-box;
-    box-sizing:content-box;
+    webkit-box-sizing: content-box;
+    box-sizing: content-box;
   }
-  webkit-box-sizing:content-box;
-  box-sizing:content-box;
-  background: rgba(255,255,255, 1);
-  color:grey;
-  border: 2px solid #EFEFEF;
+  webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  background-color: white;
+  border: 1px solid #ccc;
+  color: gray;
   position: fixed;
-  width:130px;
-  height:135px;
-  bottom:10px;
-  right:10px;
+  width: 130px;
+  height: 135px;
+  bottom: 10px;
+  right: 10px;
   z-index: 9999;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size:14px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  font-size: 14px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 
   p{
-    line-height:20px;
+    line-height: 20px;
   }
-  ::selection{ color: grey;  background: white; } 
+  ::selection{ color: gray;  background: white; }
 
   #phrasing-edit-mode, #phrasing-saved-status, #phrasing-edit-all-phrases{
     height:32px;
@@ -81,7 +80,7 @@
       border: 3px solid #CCCCCC; border-radius: 5px;
       position: absolute; top: 0; bottom: 0; right: 29px;
       -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
-      -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+      -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
       background-image: -moz-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
       background-image: -webkit-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
       background-image: -o-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
@@ -112,13 +111,14 @@
     float:left;
   }
   #phrasing-saved-status-indicator-circle{
-    background-color:green;
-    width:20px;
-    height:20px;
+    background-color: #56AE45;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    margin-left:10px;
-    margin-top:5px;
+    border-radius: 10px;
   }
   #phrasing-edit-all-phrases-headline{
     height:30px;
